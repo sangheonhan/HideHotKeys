@@ -1,0 +1,21 @@
+------------------------------------------------------------------------
+r22 | cybermind | 2015-02-25 19:33:20 +0000 (Wed, 25 Feb 2015) | 1 line
+Changed paths:
+   A /tags/v2.0 (from /trunk:21)
+
+tagging as v2.0
+------------------------------------------------------------------------
+r21 | cybermind | 2015-02-25 19:33:02 +0000 (Wed, 25 Feb 2015) | 1 line
+Changed paths:
+   M /trunk/HideHotKeys.lua
+
+Fixed /hmn (wouldn't show macro names after toggling on)
+------------------------------------------------------------------------
+r20 | cybermind | 2015-02-25 19:24:14 +0000 (Wed, 25 Feb 2015) | 2 lines
+Changed paths:
+   M /trunk/HideHotKeys.lua
+   M /trunk/HideHotKeys.toc
+
+Fixed range indicator showing up
+Bumped version+TOC
+------------------------------------------------------------------------
