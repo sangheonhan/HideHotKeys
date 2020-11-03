@@ -1,5 +1,5 @@
 
-local HideHotKeys_Frame = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
+local HideHotKeys_Frame = CreateFrame("Frame")
 
 -- default enabled
 if (HideHotKeys_HK_Hidden == nil) then
@@ -170,9 +170,9 @@ HideHotKeys_Frame:SetScript("OnEvent", HideHotKeys_EventHandler)
 HideHotKeys_Frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 -- register a hook for action button update functions
-hooksecurefunc(ActionBarActionButtonMixin, "UpdateHotkeys", HideHotKeys_ActionButton_UpdateHotkeys)
-hooksecurefunc(ActionBarActionButtonMixin, "OnUpdate", HideHotKeys_ActionButton_UpdateHotkeys)
-hooksecurefunc(ActionBarActionButtonMixin, "Update", HideHotKeys_ActionButton_Update)
+hooksecurefunc("ActionButton_UpdateHotkeys", HideHotKeys_ActionButton_UpdateHotkeys)
+hooksecurefunc("ActionButton_OnUpdate", HideHotKeys_ActionButton_UpdateHotkeys)
+hooksecurefunc("ActionButton_Update", HideHotKeys_ActionButton_Update)
 
 SLASH_HIDEHOTKEYSHK1 = "/hhk"
 SlashCmdList["HIDEHOTKEYSHK"] = HideHotKeys_HK_Slash

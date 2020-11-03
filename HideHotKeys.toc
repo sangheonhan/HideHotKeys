@@ -1,4 +1,4 @@
-## Interface: 90001
+## Interface: 11305
 ## X-Curse-Packaged-Version: v2.0
 ## X-Curse-Project-Name: HideHotKeys
 ## X-Curse-Project-ID: hidehotkeys
